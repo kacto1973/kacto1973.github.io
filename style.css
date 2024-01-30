@@ -1,0 +1,108 @@
+*{
+    font-family: 'Arial', sans-serif;
+}
+
+header{
+    background-color: hsla(113, 84%, 46%, 0.632);
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20PX;
+}   
+
+body{
+    /*display: flex;*/
+   
+    height: 100vh;
+    /*flex-direction: column; /* Añadido para apilar elementos en columna */
+    background-color: rgb(91, 133, 216);
+}
+
+#pokemonLogo{
+    height: 100px;
+}
+
+.exterior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+.outer{
+    border: 6px solid black;
+    width: 265px;
+    height: 550px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.left-inner *{
+    margin: 6px;
+}
+
+
+.inner *{
+    margin: 6px;
+    
+}
+
+.left-outer{
+    border: 6px solid black;
+    width: 265px;
+    height: 550px;
+    background-color: white;
+   
+}
+
+.right-outer{
+    border: 6px solid black;
+    width: 265px;
+    height: 550px;
+    background-color: white;
+    margin-left: 20px;
+
+}
+
+.right-inner *{
+    margin: 6px;
+}
+
+#imagenPokemon{
+    width: 200px;
+    height: 200px;
+    position:relative;
+    left: 20px;
+    border: 6px solid rgba(255, 255, 0, 0.877);
+    background-color: rgb(61, 61, 222);
+}
+
+#imagenPokemonArriba{
+    width: 200px;
+    height: 200px;
+    position:relative;
+    left: 20px;
+    border: 6px solid rgba(255, 255, 0, 0.877);
+    background-color: rgb(61, 61, 222);
+}
+
+#imagenPokemonAbajo{
+    width: 200px;
+    height: 200px;
+    position:relative;
+    left: 20px;
+    border: 6px solid rgba(255, 255, 0, 0.877);
+    background-color: rgb(61, 61, 222);
+}
+
+
+
+
+.tipos{
+    height: 40px;
+}
+

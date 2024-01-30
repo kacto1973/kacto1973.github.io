@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeWEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <header>
+        <img id="pokemonLogo" src="images/International_Pokémon_logo.svg.png" alt="">
+    </header>
+
+    <br>
+
+
+<body>
+
+    <div class="exterior">
+
+        <div class="left-outer">
+            <div class="left-inner">
+                <label>Podría interesarte...</label>
+                <br>
+                <label id="tagArriba">primero</label>
+                <img id="imagenPokemonArriba" src="" alt="">
+                <br>
+                <label id="tagAbajo"">segundo</label>
+                <img id="imagenPokemonAbajo" src="" alt="">
+            </div>
+        </div>
+    
+        <div class="outer">
+            <div class="inner">
+                <label>Ingresa el nombre de un Pokemón:</label>
+            <br>
+            <input id="input_Nombre" type="text"> 
+            <button onclick="buscarPkmn()" >Buscar</button>
+            <div id="divLista"></div>
+    
+            <label id="NOMBRE" >Nombre:</label>
+            <br>
+            <label id="HABILIDAD" >Habilidad:</label>
+            <br>
+            <label id="ID" >Id:</label>
+            <br>
+            <label id="XP_BASE" >XP Base:</label>
+            <br>
+            <label id="ALTURA" >Altura:</label>
+            <br>
+            <img id="imgTipo1" class="tipos" src="" >
+            <img id="imgTipo2" class="tipos" src="" >
+            <br>
+        
+                <img id="imagenPokemon" src="" alt=""> 
+            
+                <button onclick="mostrarShiny()">Shiny</button>
+                <button onclick="mostrarDefault()">Default</button>
+            </div>
+        </div>
+
+        <div class="right-outer">
+            <div class="right-inner">
+                <label>Movimientos del Pokémon:</label>
+                <br>
+                <label id="mov0"></label><br>
+                <label id="mov1" for="">-</label><br>
+                <label id="mov2" for="">-</label><br>
+                <label id="mov3" for="">-</label><br>
+                <label id="mov4" for="">-</label><br>
+                <label id="mov5" for="">-</label><br>
+                <label id="mov6" for="">-</label><br>
+                <label id="mov7" for="">-</label><br>
+                <label id="mov8" for="">-</label><br>
+                <label id="mov9" for="">-</label><br>
+                <label id="mov10" for="">-</label><br>
+                <label id="mov11" for="">-</label><br>
+                <label id="mov12" for="">-</label><br>
+                <label id="mov13" for="">-</label><br>
+        
+
+                
+            
+            </div>
+        </div>
+
+        <div class="right-outer">
+            <div class="right-inner">
+                <label>Estadísticas del Pokémon:</label>
+                <br>
+                <label  for="">HP:</label><br>
+                <progress id="progress0" max="255"></progress><br>
+
+                <label  for="">ATTACK:</label><br>
+                <progress id="progress1" max="255"></progress><br>
+                
+                <label  for="">DEFENSE:</label><br>
+                <progress id="progress2" max="255"></progress><br>
+
+                <label  for="">SP. ATTACK:</label><br>
+                <progress id="progress3" max="255"></progress><br>
+
+                <label  for="">SP. DEFENSE:</label><br>
+                <progress id="progress4" max="255"></progress><br>
+
+                <label  for="">SPEED</label><br>
+                <progress id="progress5" max="255"></progress><br>
+
+                
+            
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+
+    <script src="javascript.js"></script>
+    <script>
+        let inputField = document.getElementById("input_Nombre");
+        inputField.addEventListener('keydown', function(event){
+
+                buscarPkmn();
+
+
+        });
+    </script>
+</body>
+</html>
