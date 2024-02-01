@@ -27,8 +27,8 @@ body{
 
 .box{
     border: 6px solid rgb(255, 217, 0);
-    width: 18vw;
-    height: 72vh;
+    width: 17rem;
+    height: 33rem;
     background-color: white;
     margin-left: 1rem;
 }
