@@ -11,27 +11,25 @@
         <img id="pokemonLogo" src="images/International_Pokémon_logo.svg.png" alt="">
     </header>
 
-    <br>
+    
 
 
 <body>
 
     <div class="exterior">
 
-        <div class="left-outer">
-            <div class="left-inner">
-                <label>Podría interesarte...</label>
+        <div id="primero" class="box">
+                <p>Podría interesarte...</p>
+                <p id="tagArriba" >primero</p>
+                <img class="imagenPokemon" id="imagenPokemonArriba" src="" alt="">
                 <br>
-                <label id="tagArriba">primero</label>
-                <img id="imagenPokemonArriba" src="" alt="">
-                <br>
-                <label id="tagAbajo"">segundo</label>
-                <img id="imagenPokemonAbajo" src="" alt="">
-            </div>
+                <p id="tagAbajo">segundo</p>
+                <img class="imagenPokemon" id="imagenPokemonAbajo" src="" alt="">
+            
         </div>
     
-        <div class="outer">
-            <div class="inner">
+        <div id="segundo" class="box">
+       
                 <label>Ingresa el nombre de un Pokemón:</label>
             <br>
             <input id="input_Nombre" type="text"> 
@@ -42,25 +40,29 @@
             <br>
             <label id="HABILIDAD" >Habilidad:</label>
             <br>
-            <label id="ID" >Id:</label>
-            <br>
             <label id="XP_BASE" >XP Base:</label>
             <br>
             <label id="ALTURA" >Altura:</label>
             <br>
+            <label id="ID" >Id:</label>
+            <br>
+            
             <img id="imgTipo1" class="tipos" src="" >
             <img id="imgTipo2" class="tipos" src="" >
             <br>
         
-                <img id="imagenPokemon" src="" alt=""> 
+                <img class="imagenPokemon" id="imagenPokemon" src="" alt=""> 
+                <br>
             
-                <button onclick="mostrarShiny()">Shiny</button>
-                <button onclick="mostrarDefault()">Default</button>
-            </div>
+                <div class="buttons">
+                    <button onclick="mostrarShiny()">Shiny</button>
+                     <button onclick="mostrarDefault()">Default</button>
+                </div>
+            
         </div>
 
-        <div class="right-outer">
-            <div class="right-inner">
+        <div id="tercero" class="box">
+           
                 <label>Movimientos del Pokémon:</label>
                 <br>
                 <label id="mov0"></label><br>
@@ -81,11 +83,11 @@
 
                 
             
-            </div>
+           
         </div>
 
-        <div class="right-outer">
-            <div class="right-inner">
+        <div id="cuarto" class="box">
+          
                 <label>Estadísticas del Pokémon:</label>
                 <br>
                 <label  for="">HP:</label><br>
@@ -108,7 +110,7 @@
 
                 
             
-            </div>
+            
         </div>
 
     </div>

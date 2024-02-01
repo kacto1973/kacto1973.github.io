@@ -1,55 +1,16 @@
 let url = "https://pokeapi.co/api/v2/pokemon/";
 
-// Obtener el campo de entrada
-const inputNombre = document.getElementById("input_Nombre");
-// Agregar un evento 'input' para detectar cuando el usuario escribe algo
-inputNombre.addEventListener("input", function() {
-    filtrarPokemon(this);
-});
-
-
-
-
-
-// Función para filtrar los Pokémon según lo que se ingresa en el campo de entrada
-async function filtrarPokemon(input) {
-
-    const filtro = input.value.toLowerCase(); // Convertir la entrada a minúsculas
-    
-    try {
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=1000`);
-        const data = await response.json();
-        
-        const pokemonList = data.results.map(pokemon => pokemon.name);
-        
-        const resultados = pokemonList.filter(name => name.includes(filtro));
-        
-        mostrarResultados(resultados);
-    } catch (error) {
-        console.error("Error al obtener los datos de la Poke API:", error);
-    }
-}
-
-// Función para mostrar los resultados filtrados
-function mostrarResultados(resultados) {
-    // Supongamos que tienes un elemento HTML donde mostrar los resultados
-    const resultadosElemento = document.getElementById("resultados");
-    // Limpiar los resultados anteriores
-    resultadosElemento.innerHTML = "";
-    // Mostrar los resultados filtrados
-    resultados.forEach(pokemon => {
-        const elemento = document.createElement("div");
-        elemento.textContent = pokemon;
-        resultadosElemento.appendChild(elemento);
-    });
-}
-
-
 function mostrarShiny(){
 
-    let nombrePkmn = document.getElementById("input_Nombre").value.toLowerCase();
-    
-    fetch(url+nombrePkmn)
+    // Obtenemos el contenido del label
+    var labelText = document.getElementById("NOMBRE").textContent;
+    // Buscamos la posición del ":" en el texto
+    var position = labelText.indexOf(":");
+    // Extraemos la parte del texto después del ":" (añadiendo 2 para omitir el ": " en la subcadena)
+    var subtexto = labelText.substring(position + 2).toLowerCase(); 
+
+
+    fetch(url+subtexto)
     .then(response => {
 
         return response.json();
@@ -71,9 +32,15 @@ function mostrarShiny(){
 
 function mostrarDefault(){
 
-    let nombrePkmn = document.getElementById("input_Nombre").value.toLowerCase();
-    
-    fetch(url+nombrePkmn)
+     // Obtenemos el contenido del label
+     var labelText = document.getElementById("NOMBRE").textContent;
+     // Buscamos la posición del ":" en el texto
+     var position = labelText.indexOf(":");
+     // Extraemos la parte del texto después del ":" (añadiendo 2 para omitir el ": " en la subcadena)
+     var subtexto = labelText.substring(position + 2).toLowerCase(); 
+ 
+ 
+     fetch(url+subtexto)
     .then(response => {
 
         return response.json();
@@ -147,7 +114,6 @@ function buscarPkmn (){
     console.log("Estoy en el metodo")
 
     let nombrePkmn = document.getElementById("input_Nombre").value.toLowerCase();
-    
     fetch(url+nombrePkmn)
     .then(response => {
     
