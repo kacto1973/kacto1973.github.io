@@ -101,9 +101,17 @@ footer a:visited{
     .exterior{
         display: flex;
         flex-direction: column;
-        justify-content: center;   
+        justify-content: center;  
+        align-items: center; 
     }
 
+    .box{
+        margin: 1rem;
+        height: 36rem;
+    }
+
+    
+   
 
 }
 
@@ -117,9 +125,16 @@ footer a:visited{
     .exterior{
         display: flex;
         flex-direction: column;
-        justify-content: center;   
+        justify-content: center;  
+        align-items: center; 
     }
 
+    .box{
+        margin: 1rem;
+        height: 36rem;
+    }
+
+   
 }
 
 /* Estilos para teléfonos grandes */
@@ -132,7 +147,15 @@ footer a:visited{
     .exterior{
         display: flex;
         flex-direction: column;
-        justify-content: center;   
+        justify-content: center;  
+        align-items: center; 
     }
+
+    .box{
+        margin: 1rem;
+        height: 36rem;
+    }
+
+   
 
 }

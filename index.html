@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-    <header>
+    <header id="header">
         <img id="pokemonLogo" src="images/International_Pokémon_logo.svg.png" alt="">
     </header>
 
@@ -18,17 +18,9 @@
 
     <div class="exterior">
 
-        <div id="primero" class="box">
-                <p>Podría interesarte...</p>
-                <p id="tagArriba" >primero</p>
-                <img onclick="clickImagenArriba()" class="imagenPokemon" id="imagenPokemonArriba" src="" alt="">
-                <br>
-                <p id="tagAbajo">segundo</p>
-                <img onclick="clickImagenAbajo()" class="imagenPokemon" id="imagenPokemonAbajo" src="" alt="">
-            
-        </div>
     
-        <div id="segundo" class="box">
+    
+        <div id="primero" class="box">
        
                 <label>Ingresa el nombre de un Pokemón:</label>
             <br>
@@ -61,7 +53,7 @@
             
         </div>
 
-        <div id="tercero" class="box">
+        <div id="segundo" class="box">
            
                 <label>Movimientos del Pokémon:</label>
                 <br>
@@ -86,7 +78,7 @@
            
         </div>
 
-        <div id="cuarto" class="box">
+        <div id="tercero" class="box">
           
                 <label>Estadísticas del Pokémon:</label>
                 <br>
@@ -112,6 +104,20 @@
             
             
         </div>
+
+        <div id="cuarto" class="box">
+            <p>Podría interesarte...</p>
+            <p id="tagArriba" >primero</p>
+            <a href="#header">
+                <img onclick="clickImagenArriba()" class="imagenPokemon" id="imagenPokemonArriba" src="" alt="">
+            </a>
+            <br>
+            <p id="tagAbajo">segundo</p>
+            <a href="#header">
+                <img onclick="clickImagenAbajo()" class="imagenPokemon" id="imagenPokemonAbajo" src="" alt="">
+            </a>
+        
+    </div>
 
     </div>
 
