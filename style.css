@@ -159,3 +159,21 @@ footer a:visited{
    
 
 }
+
+/* lo que le siga*/
+@media only screen and (min-width: 1025px) and (max-width: 1517px) {
+    /* Estilos específicos para teléfonos grandes */
+    body{
+        font-size: 5px;
+    }
+
+
+    .box{
+        margin: 1rem;
+        height: 40rem;
+    }
+
+   
+
+}
+
