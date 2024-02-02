@@ -1,5 +1,6 @@
 *{
     font-family: 'Arial', sans-serif;
+    font-size: 15px;
 }
 
 header{
@@ -88,4 +89,30 @@ footer a:visited{
 #donarBoton{
     position: relative;
     left: 40%;
+}
+
+/* Estilos para teléfonos pequeños */
+@media only screen and (max-width: 320px) {
+    /* Estilos específicos para teléfonos pequeños */
+    body{
+        font-size: 5px;
+    }
+
+    .exterior{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+
+}
+
+/* Estilos para teléfonos medianos */
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+    /* Estilos específicos para teléfonos medianos */
+}
+
+/* Estilos para teléfonos grandes */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para teléfonos grandes */
 }
